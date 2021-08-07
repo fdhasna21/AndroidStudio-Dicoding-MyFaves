@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="6dp"
+    android:layout_marginTop="6dp"
+    android:paddingHorizontal="@dimen/layout_padding">
+
+    <ImageView
+        android:id="@+id/row_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="12dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/row_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/row_image"
+        android:text="Group Name"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+
+    <TextView
+        android:id="@+id/row_group_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/row_image"
+        android:layout_below="@id/row_group_name"
+        android:layout_marginVertical="6dp"
+        android:text="Group Description"
+        android:justificationMode="inter_word"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+    <Button
+        android:id="@+id/row_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row_group_desc"
+        android:layout_alignParentEnd="true"
+        android:text="See More"/>
+</RelativeLayout>

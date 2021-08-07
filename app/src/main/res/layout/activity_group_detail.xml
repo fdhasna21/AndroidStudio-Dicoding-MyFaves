@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupDetailActivity"
+    android:layout_marginVertical="@dimen/layout_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_view_padding">
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitCenter"
+            android:layout_marginHorizontal="@dimen/layout_padding"/>
+
+        <TextView
+            android:id="@+id/detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="1.5dp"
+            android:text="@string/profile_description"
+            android:justificationMode="inter_word"
+            style="?attr/textAppearanceSubtitle1"
+            android:layout_marginHorizontal="@dimen/layout_padding"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:divider="@drawable/divider_view_padding"
+            android:gravity="end"
+            android:padding="4dp"
+            android:layout_marginHorizontal="@dimen/layout_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See more at : "
+                style="?attr/textAppearanceSubtitle1"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/detail_kpopwiki"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_kpop_wiki"
+                android:background="#ff8404"
+                app:shapeAppearanceOverlay="@style/circular_image"
+                app:contentPadding="2.5dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/detail_wikipedia"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_wikipedia"
+                android:background="#f5f5f5"
+                app:shapeAppearanceOverlay="@style/circular_image"
+                app:contentPadding="2.5dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/detail_kprofile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_kprofile"
+                android:background="#fafafa"
+                app:shapeAppearanceOverlay="@style/circular_image"
+                app:contentPadding="4.5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
